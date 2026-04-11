@@ -1,4 +1,4 @@
-const DEFAULT_TRIAL_APP_URL = 'http://localhost:5173/'
+const DEFAULT_TRIAL_APP_URL = '/'
 
 const appendDemoParam = (baseUrl) => {
   try {
