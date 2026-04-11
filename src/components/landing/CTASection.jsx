@@ -50,7 +50,7 @@ export default function CTASection() {
                 className="rounded-full px-10 py-7 text-base font-semibold bg-white text-foreground hover:bg-white/90 shadow-2xl shadow-white/10 hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
               >
                 <a href={trialUrl}>
-                  Começar agora — é grátis
+                  Faça o teste gratis!
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>

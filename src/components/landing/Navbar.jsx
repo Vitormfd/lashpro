@@ -56,7 +56,7 @@ export default function Navbar() {
 
             <div className="hidden md:block">
               <Button asChild className="rounded-full px-6 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
-                <a href={trialUrl}>Testar grátis</a>
+                <a href={trialUrl}>Faça o teste gratis!</a>
               </Button>
             </div>
 
@@ -93,7 +93,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <Button asChild className="mt-4 rounded-full w-full py-6 text-base shadow-lg shadow-primary/25">
-                <a href={trialUrl}>Testar grátis</a>
+                <a href={trialUrl}>Faça o teste gratis!</a>
               </Button>
             </div>
           </motion.div>

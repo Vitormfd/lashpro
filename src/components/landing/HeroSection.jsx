@@ -66,7 +66,7 @@ export default function HeroSection() {
                 className="rounded-full px-8 py-6 text-base font-semibold shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 group"
               >
                 <a href={trialUrl}>
-                  Testar grátis
+                  Faça o teste gratis!
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
               </Button>
