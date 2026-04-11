@@ -1,12 +1,10 @@
 import { motion } from 'framer-motion';
-import { ArrowRight, Sparkles } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Sparkles } from 'lucide-react';
 import useScrollReveal from './useScrollReveal';
-import { getTrialDemoUrl } from '@/lib/trialLink';
+import ConversionButtons from './ConversionButtons';
 
 export default function CTASection() {
   const [ref, isVisible] = useScrollReveal();
-  const trialUrl = getTrialDemoUrl();
 
   return (
     <section className="py-20 sm:py-28 relative overflow-hidden">
@@ -44,16 +42,7 @@ export default function CTASection() {
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="rounded-full px-10 py-7 text-base font-semibold bg-white text-foreground hover:bg-white/90 shadow-2xl shadow-white/10 hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
-              >
-                <a href={trialUrl}>
-                  Faça o teste gratis!
-                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                </a>
-              </Button>
+              <ConversionButtons checkoutText="Comecar agora" compact />
             </div>
 
             <p className="mt-6 text-sm text-white/50">

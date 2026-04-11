@@ -7,6 +7,7 @@ import BenefitsSection from '../components/landing/BenefitsSection';
 import SocialProofSection from '../components/landing/SocialProofSection';
 import CTASection from '../components/landing/CTASection';
 import Footer from '../components/landing/Footer';
+import FloatingWhatsAppButton from '../components/landing/FloatingWhatsAppButton';
 
 export default function Landing() {
   return (
@@ -20,6 +21,7 @@ export default function Landing() {
       <SocialProofSection />
       <CTASection />
       <Footer />
+      <FloatingWhatsAppButton />
     </div>
   );
 }

@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Calendar, Users, BarChart3 } from 'lucide-react';
 import useScrollReveal from './useScrollReveal';
+import ConversionButtons from './ConversionButtons';
 
 const SCREENS = [
   {
@@ -137,6 +138,15 @@ export default function DemoSection() {
             </div>
           ))}
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={isVisible ? { opacity: 1, y: 0 } : {}}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          className="mt-12"
+        >
+          <ConversionButtons checkoutText="Comecar agora" />
+        </motion.div>
       </div>
     </section>
   );
