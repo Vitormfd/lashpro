@@ -96,25 +96,6 @@ export default function SocialProofSection() {
           ))}
         </div>
 
-        {/* Trust badges */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={isVisible ? { opacity: 1 } : {}}
-          transition={{ duration: 0.6, delay: 0.5 }}
-          className="mt-12 flex flex-wrap justify-center gap-6 sm:gap-10 text-center"
-        >
-          {[
-            { value: '2.000+', label: 'Lash Designers' },
-            { value: '50.000+', label: 'Agendamentos/mês' },
-            { value: '4.9/5', label: 'Avaliação média' },
-            { value: '-85%', label: 'Faltas reduzidas' },
-          ].map((stat, i) => (
-            <div key={i}>
-              <p className="text-2xl sm:text-3xl font-bold text-gradient font-heading">{stat.value}</p>
-              <p className="text-xs sm:text-sm text-muted-foreground mt-1">{stat.label}</p>
-            </div>
-          ))}
-        </motion.div>
       </div>
     </section>
   );
