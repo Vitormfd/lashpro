@@ -1,6 +1,4 @@
 import { motion } from 'framer-motion';
-import { Play } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import ConversionButtons from './ConversionButtons';
 
 const HERO_IMG = 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/0a328b862_generated_fcac1463.png';
@@ -56,17 +54,9 @@ export default function HeroSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
+              className="mt-8 flex justify-center lg:justify-start"
             >
               <ConversionButtons align="left" checkoutText="Testar gratis por 7 dias" />
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 py-6 text-base font-medium border-2 hover:bg-accent transition-all duration-300 group"
-              >
-                <Play className="mr-2 w-4 h-4 group-hover:scale-110 transition-transform" />
-                Ver demo
-              </Button>
             </motion.div>
 
             <motion.div
