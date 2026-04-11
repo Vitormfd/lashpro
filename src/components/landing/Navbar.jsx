@@ -2,10 +2,12 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { getTrialDemoUrl } from '@/lib/trialLink';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const trialUrl = getTrialDemoUrl();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -53,8 +55,8 @@ export default function Navbar() {
             </div>
 
             <div className="hidden md:block">
-              <Button className="rounded-full px-6 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
-                Testar grátis
+              <Button asChild className="rounded-full px-6 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
+                <a href={trialUrl}>Testar grátis</a>
               </Button>
             </div>
 
@@ -90,8 +92,8 @@ export default function Navbar() {
                   {link.label}
                 </motion.a>
               ))}
-              <Button className="mt-4 rounded-full w-full py-6 text-base shadow-lg shadow-primary/25">
-                Testar grátis
+              <Button asChild className="mt-4 rounded-full w-full py-6 text-base shadow-lg shadow-primary/25">
+                <a href={trialUrl}>Testar grátis</a>
               </Button>
             </div>
           </motion.div>

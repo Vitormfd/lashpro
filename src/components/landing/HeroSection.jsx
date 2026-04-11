@@ -1,10 +1,13 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { getTrialDemoUrl } from '@/lib/trialLink';
 
 const HERO_IMG = 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/0a328b862_generated_fcac1463.png';
 
 export default function HeroSection() {
+  const trialUrl = getTrialDemoUrl();
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden pt-20 pb-12">
       {/* Background decorations */}
@@ -58,11 +61,14 @@ export default function HeroSection() {
               className="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
             >
               <Button
+                asChild
                 size="lg"
                 className="rounded-full px-8 py-6 text-base font-semibold shadow-xl shadow-primary/30 hover:shadow-2xl hover:shadow-primary/40 hover:scale-105 transition-all duration-300 group"
               >
-                Testar grátis
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <a href={trialUrl}>
+                  Testar grátis
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
               <Button
                 size="lg"

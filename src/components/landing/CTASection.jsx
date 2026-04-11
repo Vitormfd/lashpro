@@ -2,9 +2,11 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import useScrollReveal from './useScrollReveal';
+import { getTrialDemoUrl } from '@/lib/trialLink';
 
 export default function CTASection() {
   const [ref, isVisible] = useScrollReveal();
+  const trialUrl = getTrialDemoUrl();
 
   return (
     <section className="py-20 sm:py-28 relative overflow-hidden">
@@ -43,11 +45,14 @@ export default function CTASection() {
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
               <Button
+                asChild
                 size="lg"
                 className="rounded-full px-10 py-7 text-base font-semibold bg-white text-foreground hover:bg-white/90 shadow-2xl shadow-white/10 hover:shadow-white/20 hover:scale-105 transition-all duration-300 group"
               >
-                Começar agora — é grátis
-                <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                <a href={trialUrl}>
+                  Começar agora — é grátis
+                  <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                </a>
               </Button>
             </div>
 
