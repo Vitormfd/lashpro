@@ -39,7 +39,7 @@ export default function Navbar() {
               <div className="w-8 h-8 rounded-xl bg-primary flex items-center justify-center">
                 <Sparkles className="w-4 h-4 text-primary-foreground" />
               </div>
-              <span className="font-heading text-xl font-semibold text-foreground">LashPro</span>
+              <span className="font-heading text-xl font-semibold text-foreground">Studio Flow</span>
             </a>
 
             <div className="hidden md:flex items-center gap-8">

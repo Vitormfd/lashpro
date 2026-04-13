@@ -5,21 +5,21 @@ import useScrollReveal from './useScrollReveal';
 const testimonials = [
   {
     name: 'Camila Santos',
-    role: 'Lash Designer — São Paulo',
+    role: 'Designer de unhas — São Paulo',
     avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/1689a069f_generated_cdd5bd59.png',
-    text: 'Antes eu perdia umas 5 clientes por mês por falta. Depois do LashPro, as faltas caíram quase a zero. Meu faturamento subiu demais!',
+    text: 'Antes eu perdia várias clientes por falta. Depois do Studio Flow, os lembretes reduziram muito as ausências e meu faturamento cresceu.',
     rating: 5,
   },
   {
     name: 'Fernanda Oliveira',
-    role: 'Lash Designer — Rio de Janeiro',
+    role: 'Esteticista — Rio de Janeiro',
     avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/30ca23293_generated_93ba14d3.png',
     text: 'O sistema é tão fácil de usar que comecei no mesmo dia. Minhas clientes adoram receber o lembrete automático. Super profissional!',
     rating: 5,
   },
   {
     name: 'Juliana Costa',
-    role: 'Lash Designer — Belo Horizonte',
+    role: 'Designer de sobrancelhas — Belo Horizonte',
     avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/2839d4a5d_generated_0ce0ebf0.png',
     text: 'Finalmente consigo ver quanto ganho por mês de verdade. O dashboard financeiro mudou minha visão do negócio. Recomendo muito!',
     rating: 5,
@@ -85,7 +85,7 @@ export default function SocialProofSection() {
             Quem já usa, ama
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-            Mais de 2.000 lash designers<br />
+            Mais de 2.000 profissionais da beleza<br />
             <span className="text-gradient">transformando seus negócios</span>
           </h2>
         </motion.div>

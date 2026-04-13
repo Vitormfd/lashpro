@@ -90,7 +90,7 @@ export default function SolutionSection() {
             <span className="text-gradient">em um só lugar</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            O LashPro foi feito por quem entende a rotina de uma lash designer.
+            O Studio Flow foi feito para quem vive a rotina de atendimentos no setor de beleza.
           </p>
         </motion.div>
 

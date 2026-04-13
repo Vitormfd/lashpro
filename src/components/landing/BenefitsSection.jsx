@@ -78,7 +78,7 @@ export default function BenefitsSection() {
             <span className="text-gradient">resultados</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            Veja o que muda na sua vida quando você começa a usar o LashPro.
+            Veja o que muda na sua rotina quando você começa a usar o Studio Flow.
           </p>
         </motion.div>
 

@@ -70,7 +70,7 @@ export default function ProblemsSection() {
             Isso te parece familiar?
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-            O dia a dia de uma lash<br />designer é{' '}
+            O dia a dia de uma profissional<br />da beleza é{' '}
             <span className="text-gradient">desafiador</span>
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">

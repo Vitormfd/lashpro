@@ -38,7 +38,7 @@ export default function CTASection() {
               Pronta para transformar<br />seu negócio?
             </h2>
             <p className="mt-6 text-lg text-white/70 max-w-lg mx-auto">
-              Junte-se a mais de 2.000 lash designers que já estão faturando mais com o LashPro.
+              Junte-se a milhares de profissionais da beleza que já estão faturando mais com o Studio Flow.
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">

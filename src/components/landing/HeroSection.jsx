@@ -25,7 +25,7 @@ export default function HeroSection() {
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/10 mb-6">
                 <span className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
                 <span className="text-xs font-medium text-accent-foreground">
-                  +2.000 lash designers já usam
+                  +2.000 profissionais da beleza já usam
                 </span>
               </div>
             </motion.div>
@@ -38,7 +38,7 @@ export default function HeroSection() {
             >
               Organize sua agenda, evite faltas e{' '}
               <span className="text-gradient">aumente seu faturamento</span>{' '}
-              como lash designer
+              com uma rotina mais leve
             </motion.h1>
 
             <motion.p
@@ -97,7 +97,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-pink-300/20 rounded-[2.5rem] blur-2xl scale-110" />
               <img
                 src={HERO_IMG}
-                alt="Dashboard do LashPro no celular"
+                alt="Dashboard do Studio Flow no celular"
                 className="relative w-64 sm:w-72 lg:w-80 rounded-[2rem] shadow-2xl shadow-black/10"
               />
               
