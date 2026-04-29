@@ -1,4 +1,4 @@
-const DEFAULT_TRIAL_APP_URL = 'https://lash-studio2.vercel.app/'
+const DEFAULT_TRIAL_APP_URL = 'https://easystudio.com.br/'
 
 const appendDemoParam = (baseUrl) => {
   try {

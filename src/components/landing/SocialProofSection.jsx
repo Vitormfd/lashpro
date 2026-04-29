@@ -7,7 +7,7 @@ const testimonials = [
     name: 'Camila Santos',
     role: 'Designer de unhas — São Paulo',
     avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/1689a069f_generated_cdd5bd59.png',
-    text: 'Antes eu perdia várias clientes por falta. Depois do Studio Flow, os lembretes reduziram muito as ausências e meu faturamento cresceu.',
+    text: 'Antes eu perdia várias clientes por falta. Depois do Easy Studio, os lembretes reduziram muito as ausências e meu faturamento cresceu.',
     rating: 5,
   },
   {

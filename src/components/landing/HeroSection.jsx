@@ -97,7 +97,7 @@ export default function HeroSection() {
               <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-pink-300/20 rounded-[2.5rem] blur-2xl scale-110" />
               <img
                 src={HERO_IMG}
-                alt="Dashboard do Studio Flow no celular"
+                alt="Dashboard do Easy Studio no celular"
                 className="relative w-64 sm:w-72 lg:w-80 rounded-[2rem] shadow-2xl shadow-black/10"
               />
               
