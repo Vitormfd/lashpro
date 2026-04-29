@@ -1,5 +1,5 @@
 const CHECKOUT_FALLBACK = 'https://seu-checkout.com'
-const WHATSAPP_NUMBER_FALLBACK = '5511999999999'
+const WHATSAPP_NUMBER_FALLBACK = '5521992320083'
 const WHATSAPP_MESSAGE_FALLBACK = 'Oi, vim pela pagina e quero entender melhor como funciona o sistema'
 
 export const CHECKOUT_URL = import.meta.env.VITE_CHECKOUT_URL || CHECKOUT_FALLBACK
