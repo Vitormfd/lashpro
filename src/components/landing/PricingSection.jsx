@@ -93,7 +93,7 @@ export default function PricingSection() {
               </div>
 
               <div className="flex justify-center">
-                <ConversionButtons checkoutText="Começar gratis agora →" compact />
+                <ConversionButtons checkoutText="Começar gratis agora →" showWhatsApp={false} />
               </div>
             </div>
           </motion.div>
