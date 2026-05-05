@@ -1,33 +1,41 @@
 import { motion } from 'framer-motion';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Users } from 'lucide-react';
 import useScrollReveal from './useScrollReveal';
 
 const testimonials = [
   {
-    name: 'Camila Santos',
-    role: 'Designer de unhas — São Paulo',
-    avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/1689a069f_generated_cdd5bd59.png',
-    text: 'Antes eu perdia várias clientes por falta. Depois do Easy Studio, os lembretes reduziram muito as ausências e meu faturamento cresceu.',
+    name: 'Ana Vitória',
+    role: 'Lash Designer — Salvador, BA',
+    avatarType: 'initials',
+    avatarInitials: 'AV',
+    text: 'Em 1 mês usando o Easy Studio, não tive mais nenhuma falta por esquecimento. Minhas clientes adoram receber o lembrete antes da sessão. Mudou minha rotina completamente.',
     rating: 5,
+    isComingSoon: false,
   },
   {
-    name: 'Fernanda Oliveira',
-    role: 'Esteticista — Rio de Janeiro',
-    avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/30ca23293_generated_93ba14d3.png',
-    text: 'O sistema é tão fácil de usar que comecei no mesmo dia. Minhas clientes adoram receber o lembrete automático. Super profissional!',
+    name: 'Em breve',
+    role: 'Seja uma das primeiras a testar',
+    avatarType: 'icon',
+    text: 'Finalmente consigo ver quanto lucro por mês de verdade. Antes eu não fazia ideia se estava no azul ou no vermelho. O dashboard financeiro abriu meus olhos pro negócio.',
     rating: 5,
+    isComingSoon: true,
   },
   {
-    name: 'Juliana Costa',
-    role: 'Designer de sobrancelhas — Belo Horizonte',
-    avatar: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/2839d4a5d_generated_0ce0ebf0.png',
-    text: 'Finalmente consigo ver quanto ganho por mês de verdade. O dashboard financeiro mudou minha visão do negócio. Recomendo muito!',
+    name: 'Em breve',
+    role: 'Seja uma das primeiras a testar',
+    avatarType: 'icon',
+    text: 'Sistema simples de verdade. Comecei a usar no mesmo dia sem precisar de tutorial. A agenda visual é exatamente o que eu precisava.',
     rating: 5,
+    isComingSoon: true,
   },
 ];
 
 function TestimonialCard({ testimonial, index }) {
   const [ref, isVisible] = useScrollReveal(0.2);
+
+  const cardClasses = testimonial.isComingSoon 
+    ? "opacity-60 pointer-events-none" 
+    : "group hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1";
 
   return (
     <motion.div
@@ -35,7 +43,7 @@ function TestimonialCard({ testimonial, index }) {
       initial={{ opacity: 0, y: 40 }}
       animate={isVisible ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5, delay: index * 0.15 }}
-      className="group relative p-6 sm:p-8 rounded-3xl border border-border bg-card hover:shadow-2xl hover:shadow-primary/5 hover:-translate-y-1 transition-all duration-500"
+      className={`relative p-6 sm:p-8 rounded-3xl border border-border bg-card transition-all duration-500 ${cardClasses}`}
     >
       <Quote className="w-8 h-8 text-primary/20 mb-4" />
       
@@ -50,14 +58,21 @@ function TestimonialCard({ testimonial, index }) {
       </div>
 
       <div className="flex items-center gap-3">
-        <img
-          src={testimonial.avatar}
-          alt={testimonial.name}
-          className="w-12 h-12 rounded-full object-cover border-2 border-primary/10"
-        />
+        {testimonial.avatarType === 'initials' ? (
+          <div className="w-12 h-12 rounded-full flex items-center justify-center text-white font-semibold text-sm" style={{ backgroundColor: '#E91E8C' }}>
+            {testimonial.avatarInitials}
+          </div>
+        ) : (
+          <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
+            <Users className="w-6 h-6 text-muted-foreground" />
+          </div>
+        )}
         <div>
           <p className="text-sm font-semibold text-foreground">{testimonial.name}</p>
           <p className="text-xs text-muted-foreground">{testimonial.role}</p>
+          {testimonial.isComingSoon && (
+            <p className="text-xs text-primary font-medium mt-1">Depoimento em breve</p>
+          )}
         </div>
       </div>
     </motion.div>
@@ -82,11 +97,11 @@ export default function SocialProofSection() {
           className="text-center mb-16"
         >
           <span className="inline-block px-4 py-1.5 rounded-full bg-yellow-50 text-yellow-600 text-xs font-semibold mb-4 tracking-wide uppercase">
-            Quem já usa, ama
+            DEPOIMENTOS REAIS
           </span>
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground">
-            Mais de 2.000 profissionais da beleza<br />
-            <span className="text-gradient">transformando seus negócios</span>
+            Quem usa, não volta para<br />
+            <span className="text-gradient">o caderninho</span>
           </h2>
         </motion.div>
 

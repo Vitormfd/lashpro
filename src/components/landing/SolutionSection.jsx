@@ -23,8 +23,8 @@ const features = [
   },
   {
     icon: Bell,
-    title: 'Lembretes Automáticos',
-    description: 'Suas clientes recebem lembretes antes do horário. Adeus, faltas!',
+    title: 'Lembretes com 1 Clique',
+    description: 'Envie lembretes para suas clientes em segundos. Reduza faltas sem esforço.',
     gradient: 'from-amber-100/50 to-orange-50/30',
   },
   {

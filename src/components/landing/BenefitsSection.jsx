@@ -4,28 +4,28 @@ import useScrollReveal from './useScrollReveal';
 
 const benefits = [
   {
-    title: 'Mais organização',
-    description: 'Sua agenda sempre em dia, sem conflitos e sem estresse.',
-    metric: '3x',
-    metricLabel: 'mais produtividade',
+    title: 'Faltas por esquecimento',
+    description: 'Com lembretes enviados antes de cada sessão, suas clientes chegam.',
+    metric: '0',
+    metricLabel: 'faltas',
   },
   {
-    title: 'Mais clientes atendidas',
-    description: 'Otimize seus horários e atenda mais sem trabalhar mais.',
-    metric: '+40%',
-    metricLabel: 'de atendimentos',
+    title: 'Controle do seu caixa',
+    description: 'Saiba exatamente quanto ganhou e quanto gastou, a qualquer momento.',
+    metric: '100%',
+    metricLabel: 'de controle',
   },
   {
-    title: 'Mais dinheiro no bolso',
-    description: 'Reduza faltas, aumente a recorrência e veja seus ganhos subirem.',
-    metric: 'R$ 2k+',
-    metricLabel: 'a mais por mês',
+    title: 'Para aprender a usar',
+    description: 'Interface simples. Você começa a usar no mesmo dia, sem tutorial.',
+    metric: '1 dia',
+    metricLabel: 'de curva de aprendizado',
   },
   {
-    title: 'Mais profissionalismo',
-    description: 'Impressione suas clientes com um atendimento de alto nível.',
-    metric: '98%',
-    metricLabel: 'de satisfação',
+    title: 'Acesso pelo celular',
+    description: 'Sua agenda e financeiro disponíveis onde e quando você precisar.',
+    metric: '24/7',
+    metricLabel: 'de disponibilidade',
   },
 ];
 

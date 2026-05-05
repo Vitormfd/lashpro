@@ -23,9 +23,8 @@ export default function HeroSection() {
               transition={{ duration: 0.7 }}
             >
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent border border-primary/10 mb-6">
-                <span className="w-2 h-2 rounded-full bg-primary animate-pulse-soft" />
                 <span className="text-xs font-medium text-accent-foreground">
-                  +2.000 profissionais da beleza já usam
+                  Feito para profissionais da beleza
                 </span>
               </div>
             </motion.div>
