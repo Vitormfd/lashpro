@@ -1,4 +1,4 @@
-const CHECKOUT_FALLBACK = 'https://buy.stripe.com/4gMdRa7QPesb43f9ZK6kg00'
+const CHECKOUT_FALLBACK = 'https://buy.stripe.com/7sYaEYb31ck32Zbb3O6kg01'
 const WHATSAPP_NUMBER_FALLBACK = '5521992320083'
 const WHATSAPP_MESSAGE_FALLBACK = 'Oi, vim pela pagina e quero entender melhor como funciona o sistema'
 
