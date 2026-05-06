@@ -34,7 +34,7 @@ export default function PricingSection() {
             Simples e sem surpresas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            7 dias grátis, sem cartão. Depois, escolha seu plano.
+            7 dias grátis. Depois, escolha seu plano.
           </p>
         </motion.div>
 
@@ -81,10 +81,6 @@ export default function PricingSection() {
                 <p className="flex items-center gap-2">
                   <span>✓</span>
                   <span>7 dias grátis</span>
-                </p>
-                <p className="flex items-center gap-2">
-                  <span>✓</span>
-                  <span>Sem cartão de crédito</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span>✓</span>

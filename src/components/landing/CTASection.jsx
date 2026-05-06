@@ -46,7 +46,7 @@ export default function CTASection() {
             </div>
 
             <p className="mt-6 text-sm text-white/50">
-              7 dias grátis • Sem cartão de crédito • Cancele quando quiser
+              7 dias grátis • Cancele quando quiser
             </p>
           </div>
         </motion.div>
