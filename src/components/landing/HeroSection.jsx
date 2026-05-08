@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import ConversionButtons from './ConversionButtons';
 
-const HERO_IMG = 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/0a328b862_generated_fcac1463.png';
+const HERO_IMG = '/images/screen-agenda.webp';
 
 export default function HeroSection() {
   return (
@@ -46,7 +46,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.2 }}
               className="mt-6 text-lg sm:text-xl text-muted-foreground max-w-lg mx-auto lg:mx-0 leading-relaxed"
             >
-              O sistema simples que transforma sua rotina e faz você ganhar mais — sem complicação.
+              O sistema simples que transforma sua rotina e faz voce ganhar mais sem complicacao.
             </motion.p>
 
             <motion.div
@@ -68,7 +68,7 @@ export default function HeroSection() {
                 <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                7 dias grátis
+                7 dias gratis
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
@@ -91,9 +91,11 @@ export default function HeroSection() {
               <img
                 src={HERO_IMG}
                 alt="Dashboard do Easy Studio no celular"
+                width={864}
+                height={1184}
                 className="relative w-64 sm:w-72 lg:w-80 rounded-[2rem] shadow-2xl shadow-black/10"
               />
-              
+
               {/* Floating card - earnings */}
               <motion.div
                 initial={{ opacity: 0, x: 30 }}
@@ -103,7 +105,7 @@ export default function HeroSection() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-green-100 flex items-center justify-center">
-                    <span className="text-lg">💰</span>
+                    <span className="text-lg">??</span>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Faturamento</p>
@@ -121,7 +123,7 @@ export default function HeroSection() {
               >
                 <div className="flex items-center gap-3">
                   <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center">
-                    <span className="text-lg">📅</span>
+                    <span className="text-lg">??</span>
                   </div>
                   <div>
                     <p className="text-xs text-muted-foreground">Hoje</p>

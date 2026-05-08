@@ -9,21 +9,21 @@ const SCREENS = [
     id: 'agenda',
     label: 'Agenda',
     icon: Calendar,
-    image: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/0a328b862_generated_fcac1463.png',
+    image: '/images/screen-agenda.webp',
     caption: 'Visualize seus compromissos de forma clara e organizada',
   },
   {
     id: 'clientes',
     label: 'Clientes',
     icon: Users,
-    image: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/f8f142a65_generated_65bfa460.png',
+    image: '/images/screen-clientes.webp',
     caption: 'Gerencie suas clientes com histórico completo',
   },
   {
     id: 'dashboard',
     label: 'Dashboard',
     icon: BarChart3,
-    image: 'https://media.base44.com/images/public/69da5a23a15e4d2a1afc6188/a1c4d6f1c_generated_ff5946dc.png',
+    image: '/images/screen-dashboard.webp',
     caption: 'Acompanhe seus ganhos em tempo real',
   },
 ];
@@ -96,6 +96,9 @@ export default function DemoSection() {
                     key={SCREENS[activeIndex].id}
                     src={SCREENS[activeIndex].image}
                     alt={SCREENS[activeIndex].label}
+                    width={864}
+                    height={1184}
+                    loading="lazy"
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: 1, x: 0 }}
                     exit={{ opacity: 0, x: -50 }}
