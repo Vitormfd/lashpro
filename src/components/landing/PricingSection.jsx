@@ -46,7 +46,7 @@ v            7 dias grátis. Depois, escolha seu plano.
             transition={{ duration: 0.6, delay: 0.1 }}
             className="relative p-8 sm:p-10 rounded-3xl border-2 border-primary/50 bg-card max-w-md w-full overflow-hidden"
           >
-            {/* Background glow */}
+            {/* Background glow1 */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-pink-100/10" />
 
             {/* Badge "Mais popular" */}
