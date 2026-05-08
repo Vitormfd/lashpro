@@ -34,7 +34,7 @@ export default function PricingSection() {
             Simples e sem surpresas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            7 dias grátis. Depois, escolha seu plano.
+v            7 dias grátis. Depois, escolha seu plano.
           </p>
         </motion.div>
 
