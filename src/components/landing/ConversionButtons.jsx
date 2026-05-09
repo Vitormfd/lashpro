@@ -1,6 +1,6 @@
 import { ArrowRight } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { CHECKOUT_URL, WHATSAPP_URL } from '@/lib/conversionLinks'
+import { SIGNUP_URL, WHATSAPP_URL } from '@/lib/conversionLinks'
 import WhatsAppIcon from './WhatsAppIcon'
 
 export default function ConversionButtons({
@@ -18,7 +18,7 @@ export default function ConversionButtons({
         size="lg"
         className={`group relative overflow-hidden rounded-full border-0 bg-gradient-to-r from-[#E65D8F] via-[#D34E86] to-[#B63E74] text-white shadow-xl shadow-[#B63E74]/35 hover:shadow-2xl hover:shadow-[#B63E74]/45 hover:scale-[1.03] active:scale-[0.98] transition-all duration-300 ${compact ? 'px-7 py-6' : 'px-9 py-7'} text-base font-semibold w-full sm:w-auto`}
       >
-        <a href={CHECKOUT_URL} target="_blank" rel="noreferrer noopener" aria-label="Ir para checkout">
+        <a href={SIGNUP_URL} target="_blank" rel="noreferrer noopener" aria-label="Criar conta">
           <span className="absolute -inset-10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 bg-[radial-gradient(circle_at_40%_20%,rgba(255,255,255,0.35),transparent_55%)]" />
           <span className="relative inline-flex items-center">
             {checkoutText}
