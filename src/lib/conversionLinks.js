@@ -1,6 +1,6 @@
 const CHECKOUT_FALLBACK = 'https://buy.stripe.com/7sYaEYb31ck32Zbb3O6kg01'
 const SIGNUP_FALLBACK = 'https://easystudio.com.br/?mode=signup'
-const WHATSAPP_NUMBER_FALLBACK = '5521992320083'
+const WHATSAPP_NUMBER_FALLBACK = '5574999348744'
 const WHATSAPP_MESSAGE_FALLBACK = 'Oi, vim pela pagina e quero entender melhor como funciona o sistema'
 
 export const CHECKOUT_URL = import.meta.env.VITE_CHECKOUT_URL || CHECKOUT_FALLBACK
