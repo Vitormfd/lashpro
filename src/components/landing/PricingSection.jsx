@@ -34,7 +34,7 @@ export default function PricingSection() {
             Simples e sem surpresas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-v            7 dias grátis. Depois, escolha seu plano.
+            7 dias grátis. Depois, escolha seu plano.
           </p>
         </motion.div>
 
@@ -63,7 +63,7 @@ v            7 dias grátis. Depois, escolha seu plano.
                 </h3>
                 <div className="flex items-baseline gap-1">
                   <span className="text-4xl sm:text-5xl font-bold text-foreground">
-                    <span style={{ color: '#E91E8C' }}>R$ 29,90/mês</span>
+                    <span style={{ color: '#E91E8C' }}>R$ 59,90/mês</span>
                   </span>
                 </div>
               </div>
