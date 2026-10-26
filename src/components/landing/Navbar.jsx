@@ -2,12 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { getTrialDemoUrl } from '@/lib/trialLink';
+import { SIGNUP_URL } from '@/lib/conversionLinks';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const trialUrl = getTrialDemoUrl();
+  // O teste grátis agora é a conta real (7 dias sem cartão), não o modo demonstração
+  const trialUrl = SIGNUP_URL;
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -56,7 +57,7 @@ export default function Navbar() {
 
             <div className="hidden md:block">
               <Button asChild className="rounded-full px-6 shadow-lg shadow-primary/25 hover:shadow-xl hover:shadow-primary/30 transition-all">
-                <a href={trialUrl}>Faça o teste gratis!</a>
+                <a href={trialUrl}>Teste grátis, sem cartão</a>
               </Button>
             </div>
 
@@ -93,7 +94,7 @@ export default function Navbar() {
                 </motion.a>
               ))}
               <Button asChild className="mt-4 rounded-full w-full py-6 text-base shadow-lg shadow-primary/25">
-                <a href={trialUrl}>Faça o teste gratis!</a>
+                <a href={trialUrl}>Teste grátis, sem cartão</a>
               </Button>
             </div>
           </motion.div>

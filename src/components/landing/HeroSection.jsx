@@ -55,7 +55,7 @@ export default function HeroSection() {
               transition={{ duration: 0.7, delay: 0.3 }}
               className="mt-8 flex justify-center lg:justify-start"
             >
-              <ConversionButtons align="left" checkoutText="Testar gratis por 7 dias" />
+              <ConversionButtons align="left" checkoutText="Testar grátis por 7 dias" />
             </motion.div>
 
             <motion.div
@@ -68,13 +68,13 @@ export default function HeroSection() {
                 <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                7 dias gratis
+                7 dias grátis
               </div>
               <div className="flex items-center gap-2">
                 <svg className="w-4 h-4 text-green-500" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
                 </svg>
-                Cancele quando quiser
+                Sem cartão de crédito
               </div>
             </motion.div>
           </div>

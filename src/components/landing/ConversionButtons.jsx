@@ -5,7 +5,7 @@ import WhatsAppIcon from './WhatsAppIcon'
 
 export default function ConversionButtons({
   align = 'center',
-  checkoutText = 'Testar gratis por 7 dias',
+  checkoutText = 'Testar grátis por 7 dias',
   showWhatsApp = true,
   compact = false,
 }) {

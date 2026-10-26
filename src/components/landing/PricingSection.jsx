@@ -34,7 +34,7 @@ export default function PricingSection() {
             Simples e sem surpresas
           </h2>
           <p className="mt-4 text-lg text-muted-foreground max-w-xl mx-auto">
-            7 dias grátis. Depois, escolha seu plano.
+            7 dias grátis, sem cartão. Depois, R$ 59,90/mês.
           </p>
         </motion.div>
 
@@ -80,7 +80,7 @@ export default function PricingSection() {
               <div className="mb-8 space-y-2 text-sm text-muted-foreground">
                 <p className="flex items-center gap-2">
                   <span>✓</span>
-                  <span>7 dias grátis</span>
+                  <span>7 dias grátis, sem cartão de crédito</span>
                 </p>
                 <p className="flex items-center gap-2">
                   <span>✓</span>
@@ -89,7 +89,7 @@ export default function PricingSection() {
               </div>
 
               <div className="flex justify-center">
-                <ConversionButtons checkoutText="Começar gratis agora →" showWhatsApp={false} />
+                <ConversionButtons checkoutText="Começar grátis agora →" showWhatsApp={false} />
               </div>
             </div>
           </motion.div>
