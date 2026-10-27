@@ -2,13 +2,13 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X, Sparkles } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { SIGNUP_URL } from '@/lib/conversionLinks';
+import { getSignupUrl } from '@/lib/conversionLinks';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   // O teste grátis agora é a conta real (7 dias sem cartão), não o modo demonstração
-  const trialUrl = SIGNUP_URL;
+  const trialUrl = getSignupUrl();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
